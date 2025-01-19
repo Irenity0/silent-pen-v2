@@ -6,15 +6,23 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#faf9f5',
-        secondary: '#49413f',
-        tertiary: '#3c3f3e',
-      },
       fontFamily: {
-        "newsreader": ["Newsreader", "serif"],
-      },
+        "parkinsans" : ["Parkinsans", "monospace"],
+      } 
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
+
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#faf9f5",
+          secondary: "#555856",
+          accent: "#3c3f3e",
+          "base": "#faf9f5"
+        }
+      }
+    ]
+  }
 }

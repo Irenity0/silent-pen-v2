@@ -5,11 +5,11 @@ const Navbar = () => {
         <section className="flex w-10/12 md:11/12 lg:w-1/2 mx-auto mt-6">
             {/* text */}
             <div className="w-3/4">
-            <h1 className="text-2xl font-bold text-tertiary">Afra Anjum</h1>
-            <h2 className="text-lg text-tertiary">Publisher from Bangladesh</h2>
+            <h1 className="text-2xl font-bold text-accent">Afra Anjum</h1>
+            <h2 className="text-lg text-secondary">Publisher from Bangladesh</h2>
             <br />
             <br />
-            <div className="space-x-3 text-lg text-tertiary">
+            <div className="space-x-3 text-lg text-secondary">
                 <NavLink to={'/'}>Blog</NavLink>
                 <NavLink to={'/profile'}>Profile</NavLink>
                 <NavLink to={'/newsletter'}>Newsletter</NavLink>
