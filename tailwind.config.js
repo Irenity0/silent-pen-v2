@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "parkinsans" : ["Parkinsans", "monospace"],
+        "newsreader": ["Newsreader", "serif"],
       } 
     },
   },
