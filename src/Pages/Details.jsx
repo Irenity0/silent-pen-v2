@@ -7,7 +7,7 @@ const Details = () => {
     const [error, setError] = useState(null); 
 
     useEffect(() => {
-        fetch('/data.json')
+        fetch('https://silent-pen-server.vercel.app/blogs')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
@@ -28,7 +28,7 @@ const Details = () => {
     }
 
     if (!blog) {
-        return <p>Loading...</p>;
+        return <p className="min-h-screen mx-auto w-10/12 md:11/12 lg:w-1/2">Loading...</p>;
     }
 
     return (

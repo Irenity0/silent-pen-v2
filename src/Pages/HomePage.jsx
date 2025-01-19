@@ -6,7 +6,7 @@ const HomePage = () => {
 
     useEffect(() => {
         // Fetch the data from the public folder for noe
-        fetch('/data.json')
+        fetch('https://silent-pen-server.vercel.app/blogs')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
@@ -18,7 +18,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <section className="w-10/12 md:11/12 lg:w-1/2 mx-auto">
+        <section className="w-10/12 min-h-screen md:11/12 lg:w-1/2 mx-auto">
             {blogs.length === 0 ? (
                 <p>Loading...</p>
             ) : (
