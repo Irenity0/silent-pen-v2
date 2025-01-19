@@ -4,6 +4,7 @@ import Layout from "../Layout/Layout";
 import HomePage from "../Pages/HomePage";
 import Details from "../Pages/Details";
 import Profile from "../Pages/Profile";
+import Newsletter from "../Pages/Newsletter";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: 'profile',
                 element: <Profile/>
+            },
+            {
+                path: 'newsletter',
+                element: <Newsletter/>
             }
         ]
     },
