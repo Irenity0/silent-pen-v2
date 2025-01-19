@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <section className="w-1/2 mx-auto">
+        <section className="w-10/12 md:11/12 lg:w-1/2 mx-auto">
             {/* about */}
             <div className="flex">
             {/* header */}
